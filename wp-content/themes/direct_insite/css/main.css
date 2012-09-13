@@ -420,3 +420,15 @@ background: url('../img/pdf.png') no-repeat
 .homepagetext a {color:#008c99; text-decoration:none}
 
 .homepagetext a:hover { text-decoration:none; background-color:#FFFF00}
+
+.sb-rb-link {
+    display: block;
+    text-decoration: none;
+    margin: auto;
+    width: 150px;
+    height: 126px;
+    background: url('../images/blog-link-image.png') no-repeat
+}
+.sb-rb-link:hover {
+    background-position: 0 -126px
+}
