@@ -379,7 +379,7 @@ if ($page_id != 80) {
                                     
                                     <a href="http://directinsite.wordpress.com/" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
                                     
-                                    <div style="height: 20px"></div>
+                                    <div style="height: 10px"></div>
 
                                     <a href="/staging/matthew-e-oakes-interview-marcum-microcap-conference-2012-snnwire" title="Matthew E Oakes Interview with SNNWIRE" style="display: inline-block; line-height: 1px"><img src="/staging/wp-content/uploads/Matthew-Oakes-Interview-2012-snnwire.jpg" width="150" height="113"></a>
 
@@ -419,7 +419,14 @@ if ($page_id != 80) {
                                 <a href="http://aberdeen.com/survey/0510_E-Payables/" title="Aberdeen Group Benchmark Study" style="display: inline-block; line-height: 1px" target="_blank"><img src="/wp-content/themes/direct_insite/img/1-BeyondPayables_200x200c.jpg" alt="Aberdeen Group Benchmark Study" height="150" width="150" /></a>
                                 <div style="height: 10px"></div>
 
-                                <a href="http://www.aberdeen.com/link/sponsor.asp?spid=30411715&cid=7498" title="Averdeen Group" style="display: inline-block; line-height: 1px" target="_blank"><img src="/wp-content/themes/direct_insite/img/boombox_sidebar.png" alt="Averdeen Group" height="120" width="150" /></a>
+                                <!--a href="http://www.aberdeen.com/link/sponsor.asp?spid=30411715&cid=7498" title="Aberdeen Group" style="display: inline-block; line-height: 1px; <?php if (is_front_page()) { ?> margin-bottom: 20px <?php } ?>" target="_blank"><img src="/wp-content/themes/direct_insite/img/boombox_sidebar.png" alt="Aberdeen Group" height="120" width="150" /></a-->
+                                <?php
+                                    if (!is_front_page()) {
+                                ?>
+                                    <a href="http://directinsite.wordpress.com/" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                <?php
+                                    }
+                                ?>
 
                                 <?php
                             }
