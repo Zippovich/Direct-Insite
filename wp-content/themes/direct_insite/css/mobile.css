@@ -1,0 +1,16 @@
+/* CSS Document */
+
+.post.page-title-area img {
+	float: left;
+	margin-right: 0px;
+}
+
+img.page-icon {
+	padding-right: 0px;
+}
+
+.post.page-title-area h2 {
+	text-shadow: #fefdf4 0 1px 0;
+	text-align: left;
+	font-size:16px;
+}
