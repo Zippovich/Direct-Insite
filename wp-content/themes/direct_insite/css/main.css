@@ -116,6 +116,8 @@ body {font: 12px/17px Arial, Helvetica, Garuda, sans-serif; color: #58595b}
 
 #menu-topnav > li ul li a {font: bold 11px/14px Arial, Helvetica, Garuda, sans-serif; color: #fff; text-decoration: none; padding: 6px 0; display: block; white-space: nowrap}
 
+#menu-topnav > li ul li#menu-item-154 ul {left: 157px} 
+#menu-topnav > li ul li#menu-item-161 ul {left: 157px} 
 
 
 /* Main Part */
@@ -162,7 +164,7 @@ body {font: 12px/17px Arial, Helvetica, Garuda, sans-serif; color: #58595b}
 
 .content {float: left; width: 788px; position: relative; padding: 0 0 0 12px}
 
-.content h1 {line-height: 28px; background: #b2bb1d; height: auto; padding: 0 18px 6px; font-size: 28px; color: #fff; font-weight: normal; margin: 0 0 5px -12px}
+.content h1 {line-height: 26px; background: #b2bb1d; height: auto; padding: 0 18px 6px; font-size: 26px; color: #fff; font-weight: normal; margin: 0 0 5px -12px}
 
 .home .content h1 {
 
