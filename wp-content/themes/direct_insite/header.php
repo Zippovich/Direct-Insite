@@ -188,12 +188,16 @@ wp_head();
 <?php
 if (is_front_page()) {
 
-    $posts_array = get_posts(array(
+    $ticker_slider = get_post_custom();
+    $ticker_slider = $ticker_slider['ticker-slider'];
+    echo $ticker_slider[0];
+    
+    /*$posts_array = get_posts(array(
         'numberposts' => 1,
         'category' => 8
             ));
 
-    echo $posts_array[0]->post_content;
+    echo $posts_array[0]->post_content;*/
 }
 ?>
 
@@ -445,7 +449,12 @@ if ($page_id != 80) {
 <?php
 if (is_front_page() && is_page()) {
 
-    $posts_array = get_posts(array(
+    $sb_text_home = get_post_custom();
+    $sb_text_home = $sb_text_home['sb-text-home'];
+    foreach ($sb_text_home as $sbth) {
+        echo '<div class="sbt-inner">' . $sbth . '</div>';
+    }
+    /*$posts_array = get_posts(array(
         'numberposts' => 999,
         'category' => 5
             ));
@@ -453,7 +462,7 @@ if (is_front_page() && is_page()) {
     foreach ($posts_array as $post => $value) {
 
         echo '<div class="sbt-inner">' . $value->post_content . '</div>';
-    }
+    }*/
 } else if (is_page() && !empty($sbt_values)) {
 
     foreach ($sbt_values as $key => $value) {

@@ -198,6 +198,11 @@ body {font: 12px/17px Arial, Helvetica, Garuda, sans-serif; color: #58595b}
 
 }
 
+.content h2.entry-title a {
+    color: #fff;
+    text-decoration: none
+}
+
 .content h3 {
 
 	font-size: 14px;
@@ -354,9 +359,9 @@ body {font: 12px/17px Arial, Helvetica, Garuda, sans-serif; color: #58595b}
 
 /* Cufon */
 
-.slogan span, #menu-topnav > li > a, .interstate-light, .interstate-light-i, .sb-text, .content h1, .ot-links a {visibility: hidden}
+.slogan span, #menu-topnav > li > a, .interstate-light, .interstate-light-i, .sb-text, .content h1, .ot-links a, .content h2.entry-title a {visibility: hidden}
 
-.cufon-ready .slogan span, .cufon-ready #menu-topnav > li > a, .cufon-ready .interstate-light, .cufon-ready .interstate-light-i, .cufon-ready .sb-text, .cufon-ready .content h1, .cufon-ready .ot-links a {visibility: visible}
+.cufon-ready .slogan span, .cufon-ready #menu-topnav > li > a, .cufon-ready .interstate-light, .cufon-ready .interstate-light-i, .cufon-ready .sb-text, .cufon-ready .content h1, .cufon-ready .ot-links a, .cufon-ready .content h2.entry-title a {visibility: visible}
 
 #menu-topnav > li > a cufon {top: -2px}
 
@@ -433,4 +438,22 @@ background: url('../img/pdf.png') no-repeat
 }
 .sb-rb-link:hover {
     background-position: 0 -126px
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
