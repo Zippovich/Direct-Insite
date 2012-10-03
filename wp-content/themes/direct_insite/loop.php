@@ -37,6 +37,12 @@
 		</div><!-- .entry-content -->
 	</div><!-- #post-0 -->
 <?php endif; ?>
+        
+<?php
+    if (is_home()) {
+        echo '<h1>Blog</h1>';
+    }
+?>
 
 <?php
 	/* Start the Loop.
@@ -100,6 +106,7 @@
 				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
+                <br />
 
 <?php /* How to display posts of the Aside format. The asides category is the old way. */ ?>
 
@@ -123,6 +130,7 @@
 				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
+                <br />
 
 <?php /* How to display all other posts. */ ?>
 
@@ -165,6 +173,7 @@
 				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
+                <br />
 
 		<?php comments_template( '', true ); ?>
 

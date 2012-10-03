@@ -213,9 +213,9 @@ if (is_front_page()) {
                 global $wp_query;
 
                 $page_id = $wp_query->get_queried_object_id();
-
-                if (is_page() && !is_front_page()) {
-
+                
+                if ((is_page() && !is_front_page()) || is_home()) {
+                    
                     $pot_values = get_post_custom_values('page-over-text', $page_id);
 
                     $poi_values = get_post_custom_values('page-over-image', $page_id);
@@ -254,7 +254,7 @@ if (is_front_page()) {
                     <div class="page-over-text is_main_<?= is_front_page() ?>">
 
                     <?php
-                    if (is_page() && !empty($pot_values)) {
+                    if ((is_page() || is_home()) && !empty($pot_values)) {
 
                         foreach ($pot_values as $key => $value) {
 
@@ -272,7 +272,7 @@ if (is_front_page()) {
                 <?php
                 if (!is_front_page()) {
 
-                    if (is_page() && !empty($poi_values) && !is_page(46)) {
+                    if ((is_page() || is_home()) && !empty($poi_values) && !is_page(46)) {
                         ?>
 
                         <div class="page-over-images">
@@ -381,7 +381,7 @@ if ($page_id != 80) {
 
                                     <div style="height: 35px"></div>
                                     
-                                    <a href="http://directinsite.wordpress.com/" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
                                     
                                     <div style="height: 10px"></div>
 
@@ -409,7 +409,7 @@ if ($page_id != 80) {
                                 <?php
                                     if (!is_front_page()) {
                                 ?>
-                                    <a href="http://directinsite.wordpress.com/" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
                                 <?php
                                     }
                                 ?>
@@ -427,7 +427,7 @@ if ($page_id != 80) {
                                 <?php
                                     if (!is_front_page()) {
                                 ?>
-                                    <a href="http://directinsite.wordpress.com/" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
                                 <?php
                                     }
                                 ?>
