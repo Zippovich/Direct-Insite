@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -43,8 +42,8 @@
 </style>
 </head>
 
-<body <?php body_class(); ?>>
-<div class="content">
+<body>
+<div>
 
 <?php
 

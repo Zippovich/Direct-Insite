@@ -26,6 +26,14 @@
 		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 	</div><!-- #nav-above -->
 <?php endif;*/ ?>
+<?php
+	if (is_home()) {
+		global $query_string;
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		query_posts( $query_string . '&posts_per_page=1&paged=' . $paged );
+		global $wp_query;
+	}
+?>
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
@@ -38,11 +46,9 @@
 	</div><!-- #post-0 -->
 <?php endif; ?>
         
-<?php
-    if (is_home()) {
-        echo '<h1>Blog</h1>';
-    }
-?>
+<?php  if (is_home()) : ?>
+		<h1><?php single_post_title(); ?></h1>
+<?php endif; ?>
 
 <?php
 	/* Start the Loop.

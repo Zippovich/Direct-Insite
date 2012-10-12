@@ -409,7 +409,7 @@ if ($page_id != 80) {
                                 <?php
                                     if (!is_front_page()) {
                                 ?>
-                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" class="sb-rb-link">&nbsp;</a>
                                 <?php
                                     }
                                 ?>
@@ -427,7 +427,7 @@ if ($page_id != 80) {
                                 <?php
                                     if (!is_front_page()) {
                                 ?>
-                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" target="_blank" class="sb-rb-link">&nbsp;</a>
+                                    <a href="<?php echo home_url('/'); ?>blogs" alt="Read Our Blog" class="sb-rb-link">&nbsp;</a>
                                 <?php
                                     }
                                 ?>
